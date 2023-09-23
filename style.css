@@ -1,0 +1,523 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*first page............................................................................................*/
+#first {
+  height: 100vh;
+  width: 100%;
+  background-image: url(sus.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hell {
+  height: 8.5vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background-color: #212121;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  padding: 12px 20px;
+}
+.nav ul li a {
+  margin-right: 55px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: bold;
+  color: #ff0099;
+  padding: 5px 5px;
+  border-radius: 14px;
+  font-family: "Roboto Mono", monospace;
+  letter-spacing: 2px;
+  transition: 0.5s ease;
+}
+.nav ul li a:hover {
+  background-color: #ff0099;
+  color: white;
+  padding: 5px 5px;
+  border-radius: 14px;
+}
+.logo {
+  padding: 1px 5px;
+}
+.logo img {
+  height: 100%;
+  width: 100%;
+}
+.main1 {
+  height: 90vh;
+  width: 100%;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  padding-top: 7%;
+}
+.main1 h1 {
+  padding-top: 9%;
+  padding-left: 15%;
+  font-size: 45px;
+  text-transform: capitalize;
+  padding-bottom: 0.5%;
+  color: white;
+}
+span {
+  color: #f9004d;
+}
+.main1 h2 {
+  padding-left: 5%;
+  padding-bottom: 1%;
+  font-size: 65px;
+}
+.main1 p {
+  width: 28%;
+  margin-left: 13%;
+  margin-bottom: 8%;
+  font-size: 22px;
+  text-transform: capitalize;
+  color: white;
+  letter-spacing: 2px;
+  border-right: 3px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4s steps(23), cursor 0.4s step-end infinite alternate;
+}
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+.btn1 {
+  padding-left: 20%;
+}
+.btn1 a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 6px 30px;
+  border: 2px solid white;
+  border-radius: 13px;
+  font-weight: bold;
+  color: white;
+  background-color: #f9004d;
+  transition: 0.4s ease;
+  letter-spacing: 2px;
+}
+.btn1 a:hover {
+  background-color: #191919;
+  color: #f9004d;
+  text-shadow: 1px 1px 1px black;
+  border: 2px solid white;
+}
+/* end of first page.......................................................................................*/
+
+/* second page.......................................................................................*/
+#second {
+  height: 100vh;
+  width: 100%;
+  background-color: #191919;
+}
+#second h1 {
+  color: white;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 60px;
+  padding-top: 5%;
+  font-family: "Roboto Mono", monospace;
+  letter-spacing: 4px;
+}
+.container {
+  display: flex;
+  align-items: center;
+}
+.pic {
+  height: 60vh;
+  width: 25vw;
+  border: 5px solid #f9004d;
+  border-radius: 6px;
+  margin-left: 20%;
+  margin-top: 5%;
+  transition: 0.4s ease;
+  padding: 1.5px 1.5px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+    url(about.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: slider 9s infinite linear;
+}
+
+@keyframes slider {
+  0% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+      url(about.jpg);
+  }
+  35% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+      url(about2.jpeg);
+  }
+  75% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+      url(about3.jpeg);
+  }
+}
+.pic img {
+  height: 100%;
+  width: 10%;
+}
+.pic:hover {
+  padding: 4px 4px;
+  border: 5px solid red;
+  border-radius: 6px;
+}
+.text {
+  margin-left: 2%;
+  height: 60vh;
+  width: 30%;
+  text-align: center;
+}
+.text h2 {
+  text-transform: capitalize;
+  font-size: 45px;
+  color: white;
+  margin-top: 20%;
+  text-align: center;
+  margin-bottom: 7%;
+  font-family: "Roboto Mono", monospace;
+  letter-spacing: 2px;
+}
+.text p {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  margin-bottom: 10%;
+}
+.btn2 a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 6px 20px;
+  border: 2px solid white;
+  border-radius: 13px;
+  font-weight: bold;
+  color: #f9004d;
+  transition: 0.4s ease;
+  letter-spacing: 2px;
+  font-family: "Roboto Mono", monospace;
+}
+.btn2 a:hover {
+  background-color: #f9004d;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  border: 2px solid white;
+}
+
+.btn4 {
+  margin-top: 25%;
+}
+
+.btn4 a {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Roboto Mono", monospace;
+  margin-left: 150%;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: 0.5s ease;
+}
+.btn4 a:hover {
+  color: #f9004d;
+}
+
+/* end of second page.......................................................................................*/
+
+/*last page..........................................................................................*/
+#last {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+#last h1 {
+  color: white;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 60px;
+  padding-top: 4%;
+  font-family: "Roboto Mono", monospace;
+  letter-spacing: 4px;
+}
+#last h2 {
+  text-align: center;
+  font-size: 35px;
+  text-transform: capitalize;
+  color: white;
+  margin-top: 1.5%;
+  font-family: "Roboto Mono", monospace;
+  letter-spacing: 4px;
+}
+.input {
+  margin-left: 37%;
+  margin-top: 2.2%;
+}
+label {
+  color: white;
+  font-size: 25px;
+  text-transform: capitalize;
+  padding-bottom: 3px;
+  letter-spacing: 2px;
+  font-family: "Roboto Mono", monospace;
+}
+.input input {
+  height: 6vh;
+  width: 40%;
+  border-radius: 15px;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  padding: 5px 8px;
+  color: #f9004d;
+  font-weight: bold;
+  font-family: "Roboto Mono", monospace;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border: 2px solid #33ff66;
+}
+.btn3 input {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 8px 10px;
+  border: 2px solid white;
+  border-radius: 13px;
+  font-weight: bold;
+  color: white;
+  background-color: #f9004d;
+  transition: 0.4s ease;
+  letter-spacing: 2px;
+  margin-left: 46%;
+  font-family: "Roboto Mono", monospace;
+}
+
+.btn3 input:hover {
+  background-color: #191919;
+  color: #f9004d;
+  text-shadow: 1px 1px 1px black;
+  border: 2px solid white;
+  cursor: pointer;
+}
+.final {
+  text-align: center;
+}
+.final h5 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 20px;
+  margin-top: 1%;
+  font-family: "Roboto Mono", monospace;
+  letter-spacing: 2px;
+  margin-right: 2%;
+  margin-left: 1%;
+}
+.ico {
+  margin-right: 2%;
+  margin-top: 1%;
+  margin-left: 1%;
+}
+.ico i {
+  font-size: 35px;
+  color: white;
+  padding-right: 1%;
+  transition: 0.4s ease;
+}
+.ico i:hover {
+  color: #f9004d;
+  cursor: pointer;
+}
+.footer {
+  text-align: center;
+  color: white;
+  margin-top: 1%;
+  margin-right: 2%;
+  margin-left: 1%;
+}
+
+.btn5 {
+  margin-left: 90%;
+}
+
+.btn5 a {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Roboto Mono", monospace;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: 0.5s ease;
+}
+.btn5 a:hover {
+  color: #f9004d;
+}
+/* end of last page..........................................................................................*/
+
+/* hiring page..........................................................................................*/
+body {
+  background-color: #191919;
+}
+
+#hire {
+  margin-left: 16%;
+}
+
+#hire h1 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 45px;
+  padding-top: 6%;
+  font-family: "Roboto Mono", monospace;
+  letter-spacing: 4px;
+  margin-left: 18%;
+  margin-bottom: 1.5%;
+}
+#hire p {
+  color: white;
+  text-transform: capitalize;
+  font-size: 20px;
+  padding-top: 2%;
+  font-family: "Roboto Mono", monospace;
+  letter-spacing: 4px;
+  margin-left: 22%;
+  margin-bottom: 4%;
+  font-weight: bold;
+}
+.touch p {
+  color: black;
+}
+.part1 {
+  display: flex;
+}
+
+.part1 input {
+  margin-right: 4%;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  height: 8vh;
+  width: 55vh;
+  border: 2px solid white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+  background: transparent;
+  color: white;
+}
+
+.part2 {
+  display: flex;
+}
+
+.part2 input {
+  margin-right: 4%;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  height: 8vh;
+  width: 55vh;
+  border: 2px solid white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+  background: transparent;
+  color: white;
+}
+
+.part3 {
+  display: flex;
+}
+
+.part3 input {
+  margin-right: 4%;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  height: 8vh;
+  width: 55vh;
+  border: 2px solid white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+  background: transparent;
+  color: white;
+}
+.part3 select {
+  margin-right: 4%;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  height: 8vh;
+  width: 55vh;
+  border: 2px solid white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+  background: transparent;
+  color: white;
+}
+.part3 option {
+  color: white;
+  background-color: #101010;
+}
+.btn7 {
+  margin-left: 27%;
+  margin-top: 4%;
+}
+.btn7 input {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 6px 20px;
+  border: 2px solid white;
+  border-radius: 13px;
+  font-weight: bold;
+  color: white;
+  background-color: #f9004d;
+  transition: 0.4s ease;
+  letter-spacing: 2px;
+  margin-right: 4%;
+}
+.btn7 input:hover {
+  background-color: #191919;
+  color: #f9004d;
+  text-shadow: 1px 1px 1px black;
+  border: 2px solid white;
+}
+
+.touch {
+  text-align: center;
+}
+.touch p {
+  color: white;
+  text-transform: capitalize;
+  font-size: 20px;
+  padding-top: 2%;
+  font-family: "Roboto Mono", monospace;
+  letter-spacing: 4px;
+  font-weight: bold;
+  margin-top: 2%;
+}
+/* end of hiring  page..........................................................................................*/
